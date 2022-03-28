@@ -38,8 +38,9 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 
 * Tính tổng số loại tương tác theo từng phiên:
 * 
-| |user_session	| cart	| purchase	| view
-0	| 000506dd-c8f9-46e2-895c-70a78cde8e17	| 1	| 0	| 14
-1	| 001be2de-46a6-429d-b568-fd52d8af3f7d	| 1	| 1	| 1
-2	| 003a912b-50c7-4114-bbdd-b7f078283268	| 0	| 0	| 3
-3	| 0043bdfa-2cb9-488f-98fd-b7cf00622a43	| 0	| 0	| 2
+|user_session	| cart	| purchase	| view
+| -------------- | --- | --- | --- | 
+| 000506dd-c8f9-46e2-895c-70a78cde8e17	| 1	| 0	| 14
+| 001be2de-46a6-429d-b568-fd52d8af3f7d	| 1	| 1	| 1
+| 003a912b-50c7-4114-bbdd-b7f078283268	| 0	| 0	| 3
+| 0043bdfa-2cb9-488f-98fd-b7cf00622a43	| 0	| 0	| 2
