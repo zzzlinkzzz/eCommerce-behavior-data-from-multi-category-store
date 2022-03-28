@@ -47,5 +47,12 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 
 | user_session	| event_time_first	| event_time_last	| duration	|
 | -------------- | --- | --- | --- | 
-| eddf5cd0-c926-4920-a5b4-b2a65b7779b7	| 2019-11-17 01:29:09	| 2019-11-17 01:43:58	889	|
-| 5c1e2dcb-f090-4014-b5f2-77db180404e5	| 2019-11-17 01:33:04	| 2019-11-17 02:21:00	2876	|
+| eddf5cd0-c926-4920-a5b4-b2a65b7779b7	| 2019-11-17 01:29:09	| 2019-11-17 01:43:58	|	889	|
+| 5c1e2dcb-f090-4014-b5f2-77db180404e5	| 2019-11-17 01:33:04	| 2019-11-17 02:21:00	|	2876	|
+
+* Số loại hàng hóa/phân nhóm hang hóa đã xảy ra tương tác:
+
+| user_session	| num_distinct_cart_cat	| num_distinct_cart_product | 
+| -------------- | --- | --- |
+| f38c9080-eb01-4e42-94de-81201179c15d	| 16	| 36| 
+| 13a0cd04-cbec-4842-866e-629f73fa66c0	| 15	| 50| 
