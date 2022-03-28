@@ -62,7 +62,7 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 | user_session	| cart	| purchase	| view| 
 | -------------- | --- | --- | --- | 
 | 000506dd-c8f9-46e2-895c-70a78cde8e17	| 486.24	| 0.00	| 5589.57| 
-| 001be2de-46a6-429d-b568-fd52d8af3f7d	8.21	| 8.21| 	8.21| 
+| 001be2de-46a6-429d-b568-fd52d8af3f7d	| 8.21	| 8.21| 	8.21| 
 
 * giá tiền trung bình các sản phẩm đã xem, đã mua, đã bỏ vào giỏ hàng; giờ bắt đầu phiên, ngày trong tuần
 
@@ -71,3 +71,25 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 |eddf5cd0-c926-4920-a5b4-b2a65b7779b7|0.0      |0.0          |329.94   |8   |Sun     |
 |5c1e2dcb-f090-4014-b5f2-77db180404e5|0.0      |0.0          |118.87   |8   |Sun     |
 
+2. Phân tích dữ liệu:
+
+* Hành vi mua hàng thường xảy ra vào cuối tuần, số đơn hàng vào thứ 6, thứ 7 và chủ nhật gấp đôi các ngày còn lại  trong tuần
+
+<p align="center">
+<img src="./img/dayofweek.png" width="500"/>
+</p>
+
+* Mặc dù số đơn hàng ban ngày rất lớn, số đơn hàng ban đêm cũng xảy ra với số lượng không nhỏ, tuy nhiên tỷ lệ mua hàng/xem giảm đáng kể so với ban ngày. Sự phân biệt này cho thấy các loại hàng hóa được xem vào ban đêm là các loại hàng hóa khách hàng quan tâm và còn đang cân nhắc; các loại hàng hóa được mua ban ngày là các loại hàng hóa cần thiết phải mua ngay.
+
+<p align="center">
+<img src="./img/hour.png" width="500"/>
+</p>
+
+* Phân tích kmean cho thấy có thể chia khung giờ trong ngày thành 3 nhóm:
+  - Giờ cao điểm: 4h - 14: lưu lượng truy cập cao, tỷ lệ chuyển đổi cao
+  - Giờ trung bình: 3h, 15h - 18h: lưu lượng truy cập cao, tỷ lệ chuyển đổi thấp
+  - Giờ thấp điểm: 19h - 2h: lưu lượng truy cập thấp, tỷ lệ chuyển đổi thấp
+
+<p align="center">
+<img src="./img/kmean.png" width="500"/>
+</p>
