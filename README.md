@@ -94,6 +94,7 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 <img src="./img/kmean.png" width="600"/>
 </p>
 
+<p align="center">
 |hour	|total_event	|conversion_rate	|hour_label|
 | -------------- | --- | --- | --- |
 |0	|89963	|0.60	|1|
@@ -120,6 +121,8 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 |21	|122506	|0.82	|1|
 |22	|74609	|0.91	|1|
 |23	|56783	|0.84	|1|
+</p>
+
 
 * Phân phối tần suất tính theo logarit tự nhiên của khoảng thời gian mua hàng, tổng giá tiền sản phẩm đã xem, tổng giá tiền sản phẩm đã mua có dạng hình chuông và cân đối: 
 
@@ -136,3 +139,30 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 <p align="center">
 <img src="./img/r_purchase.png" width="600"/>
 </p>
+
+3. Xây dựng mô hình:
+* lựa chọn đặc trưng:
+
+```bash
+sql_script = \
+"""
+    SELECT
+        ROUND(LOG(duration/c_view),2) AS log_avg_duration,
+        ROUND(LOG(mean_cart),2) AS log_mean_cart,
+        day_name,
+        hour,
+        num_distinct_category,
+        num_distinct_cart_cat,
+        num_distinct_cart_product,
+        (CASE
+            WHEN c_purchase <> 0 then 1
+            ELSE c_purchase
+        END) AS labels
+    FROM session_insight
+    WHERE user_session IS NOT NULL
+    AND c_cart <> 0
+    ;
+"""
+dataset = spark.sql(sql_script)
+```
+
