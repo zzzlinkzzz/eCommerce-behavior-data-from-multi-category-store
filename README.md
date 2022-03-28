@@ -50,9 +50,24 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 | eddf5cd0-c926-4920-a5b4-b2a65b7779b7	| 2019-11-17 01:29:09	| 2019-11-17 01:43:58	|	889	|
 | 5c1e2dcb-f090-4014-b5f2-77db180404e5	| 2019-11-17 01:33:04	| 2019-11-17 02:21:00	|	2876	|
 
-* Số loại hàng hóa/phân nhóm hang hóa đã xảy ra tương tác:
+* Số loại hàng hóa/phân nhóm hàng hóa đã cho vào giỏ hàng:
 
 | user_session	| num_distinct_cart_cat	| num_distinct_cart_product | 
 | -------------- | --- | --- |
 | f38c9080-eb01-4e42-94de-81201179c15d	| 16	| 36| 
 | 13a0cd04-cbec-4842-866e-629f73fa66c0	| 15	| 50| 
+
+* Tổng giá tiền của các sản phẩm xảy ra tương tác:
+
+| user_session	| cart	| purchase	| view| 
+| -------------- | --- | --- | --- | 
+| 000506dd-c8f9-46e2-895c-70a78cde8e17	| 486.24	| 0.00	| 5589.57| 
+| 001be2de-46a6-429d-b568-fd52d8af3f7d	8.21	| 8.21| 	8.21| 
+
+* giá tiền trung bình các sản phẩm đã xem, đã mua, đã bỏ vào giỏ hàng; giờ bắt đầu phiên, ngày trong tuần
+
+|user_session |mean_cart|mean_purchase|mean_view|hour|day_name|
+| -------------- | --- | --- | --- | --- | --- | 
+|eddf5cd0-c926-4920-a5b4-b2a65b7779b7|0.0      |0.0          |329.94   |8   |Sun     |
+|5c1e2dcb-f090-4014-b5f2-77db180404e5|0.0      |0.0          |118.87   |8   |Sun     |
+
