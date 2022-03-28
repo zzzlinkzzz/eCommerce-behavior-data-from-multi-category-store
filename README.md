@@ -94,7 +94,8 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 <img src="./img/kmean.png" width="600"/>
 </p>
 
-<p align="center">
+<center>
+  
 |hour	|total_event	|conversion_rate	|hour_label|
 | -------------- | --- | --- | --- |
 |0	|89963	|0.60	|1|
@@ -121,7 +122,8 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 |21	|122506	|0.82	|1|
 |22	|74609	|0.91	|1|
 |23	|56783	|0.84	|1|
-</p>
+  
+</center>
 
 
 * Phân phối tần suất tính theo logarit tự nhiên của khoảng thời gian mua hàng, tổng giá tiền sản phẩm đã xem, tổng giá tiền sản phẩm đã mua có dạng hình chuông và cân đối: 
