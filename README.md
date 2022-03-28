@@ -76,13 +76,13 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 * Hành vi mua hàng thường xảy ra vào cuối tuần, số đơn hàng vào thứ 6, thứ 7 và chủ nhật gấp đôi các ngày còn lại  trong tuần
 
 <p align="center">
-<img src="./img/dayofweek.png" width="500"/>
+<img src="./img/dayofweek.png" width="600"/>
 </p>
 
 * Mặc dù số đơn hàng ban ngày rất lớn, số đơn hàng ban đêm cũng xảy ra với số lượng không nhỏ, tuy nhiên tỷ lệ mua hàng/xem giảm đáng kể so với ban ngày. Sự phân biệt này cho thấy các loại hàng hóa được xem vào ban đêm là các loại hàng hóa khách hàng quan tâm và còn đang cân nhắc; các loại hàng hóa được mua ban ngày là các loại hàng hóa cần thiết phải mua ngay.
 
 <p align="center">
-<img src="./img/hour.png" width="500"/>
+<img src="./img/hour.png" width="600"/>
 </p>
 
 * Phân tích kmean cho thấy có thể chia khung giờ trong ngày thành 3 nhóm:
@@ -91,7 +91,7 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
   - Giờ thấp điểm: 19h - 2h: lưu lượng truy cập thấp, tỷ lệ chuyển đổi thấp
 
 <p align="center">
-<img src="./img/kmean.png" width="500"/>
+<img src="./img/kmean.png" width="600"/>
 </p>
 
 |hour	|total_event	|conversion_rate	|hour_label|
@@ -120,3 +120,19 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 |21	|122506	|0.82	|1|
 |22	|74609	|0.91	|1|
 |23	|56783	|0.84	|1|
+
+* Phân phối tần suất tính theo logarit tự nhiên của khoảng thời gian mua hàng, tổng giá tiền sản phẩm đã xem, tổng giá tiền sản phẩm đã mua có dạng hình chuông và cân đối: 
+
+<p align="center">
+<img src="./img/duration.png" width="600"/>
+</p>
+
+
+<p align="center">
+<img src="./img/r_view.png" width="600"/>
+</p>
+
+
+<p align="center">
+<img src="./img/r_purchase.png" width="600"/>
+</p>
