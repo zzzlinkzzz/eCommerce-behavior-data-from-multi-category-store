@@ -36,11 +36,16 @@ src: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-mult
 
 1. Khai thác đặc trưng dữ liệu (feature engineering):
 
-* Tính tổng số loại tương tác theo từng phiên:
-* 
-|user_session	| cart	| purchase	| view
+* Tổng số loại tương tác theo từng phiên:
+
+| user_session	| cart	| purchase	| view	|
 | -------------- | --- | --- | --- | 
-| 000506dd-c8f9-46e2-895c-70a78cde8e17	| 1	| 0	| 14
-| 001be2de-46a6-429d-b568-fd52d8af3f7d	| 1	| 1	| 1
-| 003a912b-50c7-4114-bbdd-b7f078283268	| 0	| 0	| 3
-| 0043bdfa-2cb9-488f-98fd-b7cf00622a43	| 0	| 0	| 2
+| 000506dd-c8f9-46e2-895c-70a78cde8e17	| 1	| 0	| 14	|
+| 001be2de-46a6-429d-b568-fd52d8af3f7d	| 1	| 1	| 1	|
+
+* Tìm thời điểm bắt đầu, kết thúc và khoảng thời gian xảy ra phiên truy cập:
+
+| user_session	| event_time_first	| event_time_last	| duration	|
+| -------------- | --- | --- | --- | 
+| eddf5cd0-c926-4920-a5b4-b2a65b7779b7	| 2019-11-17 01:29:09	| 2019-11-17 01:43:58	889	|
+| 5c1e2dcb-f090-4014-b5f2-77db180404e5	| 2019-11-17 01:33:04	| 2019-11-17 02:21:00	2876	|
