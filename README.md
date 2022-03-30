@@ -168,7 +168,7 @@ sql_script = \
 dataset = spark.sql(sql_script)
 ```
  * lựa chọn đặc trưng:
-  - log_avg_duration: khoảng thời gian trung bình giữa các click: thời gian ngắn hoặc quá dài thể hiện sự không hứng thú hoặc không tập trung mua hàng.
+   - log_avg_duration: khoảng thời gian trung bình giữa các click: thời gian ngắn hoặc quá dài thể hiện sự không hứng thú hoặc không tập trung mua hàng.
    - log_mean_cart: giá tiền trung bình của các sản phẩm trong giỏ hàng thể hiện ngân sách của khách hàng. Không lựa chọn các tiêu chí giá tiền khác do có hiện tượng đa cộng tuyến.
    - day_name: ngày trong tuần xảy bắt đầu phiên. Cuối tuần có khả năng mua hàng cao hơn.
    - hour: giờ trong ngày bắt đầu phiên. Tỷ lệ mua mua hàng cao hơn vào các khung giờ cao điểm.
