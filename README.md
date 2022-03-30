@@ -1,4 +1,4 @@
-# eCommerce-behavior-data-from-multi-category-store
+# Dự đoán hành vi mua hàng & khai phá nhóm hàng hóa thường xuyên trên dữ liệu lớn
 
 ### Nguồn dữ liệu:
 Dữ liệu là các tương tác (click) của khách hàng trên một cửa hàng thương mại điện tử trong tháng 10 và tháng 11 năm 2019.
@@ -185,3 +185,8 @@ dataset = spark.sql(sql_script)
    - Đoán đúng phiên mua hàng & phiên không mua hàng / tổng số phiên: 73.67%
 
 * Kêt luận: Cần tiếp tục khai thác, bổ sung thêm các đặc trưng phiên truy cập để nâng cao khả năng dự đoán của mô hình.
+
+
+### Vấn đề 2: khai phá nhóm hàng hóa thường xuyên:
+
+loading...
