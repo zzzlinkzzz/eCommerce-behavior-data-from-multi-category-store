@@ -179,13 +179,13 @@ dataset = spark.sql(sql_script)
 
 * Áp dung MinMaxScaler với biến liên tục, OneHotEnconding với biến tổ.
 * Train - test tỷ lệ 80 - 20, cân bằng tỷ lệ nhãn giữa train và test
-* Sử dụng mô hình XGBoost Classifier với các thông số: learning_rate=0.5, max_depth=6 
+* Sử dụng mô hình XGBoost Classifier với các thông số: learning_rate=0.1, max_depth=15
 * Kết quả dự đoán: 
-   - Đoán đúng phiên mua hàng / tổng số phiên mua hàng thật sự: 64.85%
-   - Đoán đúng phiên mua hàng / tổng số dự đoán mua hàng: 61.32%
-   - Đoán đúng phiên mua hàng & phiên không mua hàng / tổng số phiên: 73.67%
+   - Đoán đúng phiên mua hàng / tổng số phiên mua hàng thật sự: 60.84%
+   - Đoán đúng phiên mua hàng / tổng số dự đoán mua hàng: 64.97%
+   - Đoán đúng phiên mua hàng & phiên không mua hàng / tổng số phiên: 73.24%
 
-* Kêt luận: Cần tiếp tục khai thác, bổ sung thêm các đặc trưng phiên truy cập để nâng cao khả năng dự đoán của mô hình.
+* Kêt luận: Với mục tiêu nâng cao hiệu quả chăm sóc khách hàng, mô hình đã dự đoán được xấp xỉ 2/3 số trường hợp khách hàng có khả năng mua hàng để có các chính sách ưu đãi hoặc bán kèm phù hợp.
 
 
 ### Vấn đề 2: khai phá nhóm hàng hóa thường xuyên:
