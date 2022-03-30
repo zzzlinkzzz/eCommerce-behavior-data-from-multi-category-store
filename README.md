@@ -169,13 +169,13 @@ dataset = spark.sql(sql_script)
 ```
  * lựa chọn đặc trưng:
   - log_avg_duration: khoảng thời gian trung bình giữa các click: thời gian ngắn hoặc quá dài thể hiện sự không hứng thú hoặc không tập trung mua hàng.
-  - log_mean_cart: giá tiền trung bình của các sản phẩm trong giỏ hàng thể hiện ngân sách của khách hàng. Không lựa chọn các tiêu chí giá tiền khác do có hiện tượng đa cộng tuyến.
-  - day_name: ngày trong tuần xảy bắt đầu phiên. Cuối tuần có khả năng mua hàng cao hơn.
-  - hour: giờ trong ngày bắt đầu phiên. Tỷ lệ mua mua hàng cao hơn vào các khung giờ cao điểm.
-  - num_distinct_category: Số nhóm hàng hóa đã xem thể hiện thị hiếu của khách hàng tập trung hoặc phân tán.
-  - num_distinct_cart_cat: Só nhóm hàng hóa khách hàng bỏ vào giỏ thể hiện nhu cầu thực của khách hàng tập trung hoặc phân tán.
-  - num_distinct_cart_product: Số loại hàng hóa khách hàng bỏ vào giỏ thể hiện khách mua tiêu dùng (mua nhiều loại hàng hóa khách loại) hoặc mua buôn (mua số lượng nhiều cùng loại hàng hóa).
-  - labels: nhãn huấn luyện mô hình.
+   - log_mean_cart: giá tiền trung bình của các sản phẩm trong giỏ hàng thể hiện ngân sách của khách hàng. Không lựa chọn các tiêu chí giá tiền khác do có hiện tượng đa cộng tuyến.
+   - day_name: ngày trong tuần xảy bắt đầu phiên. Cuối tuần có khả năng mua hàng cao hơn.
+   - hour: giờ trong ngày bắt đầu phiên. Tỷ lệ mua mua hàng cao hơn vào các khung giờ cao điểm.
+   - num_distinct_category: Số nhóm hàng hóa đã xem thể hiện thị hiếu của khách hàng tập trung hoặc phân tán.
+   - num_distinct_cart_cat: Só nhóm hàng hóa khách hàng bỏ vào giỏ thể hiện nhu cầu thực của khách hàng tập trung hoặc phân tán.
+   - num_distinct_cart_product: Số loại hàng hóa khách hàng bỏ vào giỏ thể hiện khách mua tiêu dùng (mua nhiều loại hàng hóa khách loại) hoặc mua buôn (mua số lượng nhiều cùng loại hàng hóa).
+   - labels: nhãn huấn luyện mô hình.
 
 * Áp dung MinMaxScaler với biến liên tục, OneHotEnconding với biến tổ.
 * Train - test tỷ lệ 80 - 20, cân bằng tỷ lệ nhãn giữa train và test
